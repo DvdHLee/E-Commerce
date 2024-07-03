@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2ca8dfbdd4.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <img src="assets/Library.svg" alt="library logo" class="logo">
+            <ul class="nav__links">
+                <li class="nav__link">
+                    <a href="" class="nav__link--button">Home</a>
+                </li>
+                <li class="nav__link">
+                    <a href="" class="nav__link--button">Contact</a>
+                </li>
+                <li class="nav__link">
+                    <a href="" class="nav__link--button">Books</a>
+                </li>
+            </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="btn__menu--list">
+                    <a href="" class="btn__menu--item">Home</a>
+                    <a href="" class="btn__menu--item">Contact</a>
+                    <a href="" class="btn__menu--item">Books</a>
+                </div>
+            </div>
+        </nav>
+        <h2 class="landing__title">Australia's most awarded online library platform</h2>
+        <h3 class="landing__subtitle">Find your dream book with <span class="text--purple">Library</span></h3>
+        <button class="bookslink">Browse Books</button>
+        <img src="assets/Undraw_Books.svg" alt="" class="introimg">
+    </section>
+    <section id="highlights">
+        <h2 class="section__title">Why choose <span class="text--purple">Library?</span></h2>
+        <ul class="highlight__list">
+            <li class="highlight">
+                <div class="highlight__icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h2 class="highlight__title">Easy and Quick</h2>
+                <p class="highlight__description">Get access to the book you purchased online instantly</p>
+            </li>
+            <li class="highlight">
+                <div class="highlight__icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h2 class="highlight__title">10,000+ Books</h2>
+                <p class="highlight__description">Library has books in all your favourite categories</p>
+            </li>
+            <li class="highlight">
+                <div class="highlight__icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h2 class="highlight__title">Affordable</h2>
+                <p class="highlight__description">Get your hands on popular books for as little as $10</p>
+            </li>
+        </ul>
+    </section>
+    <section id="featured">
+        <h2 class="section__title" id="section__title--featured">Featured <span class="text--purple">Books</span></h2>
+        <ul class="books">
+            <li class="book__container">
+                <img src="assets/crack the coding interview.png" alt="crack the coding interview img" class="book">
+                <h2 class="book__title">Crack the Coding Interview</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price"><span class="discount">$59.95</span> $14.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/atomic habits.jpg" alt="atomic habits img" class="book">
+                <h2 class="book__title">Atomic Habits</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price"><span class="discount">$39.95</span> $12.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/david goggins.jpeg" alt="cant hurt me img" class="book">
+                <h2 class="book__title">Can't Hurt Me</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$28.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/deep work.jpeg" alt="deep work img" class="book">
+                <h2 class="book__title">Deep Work</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price"><span class="discount">$39.95</span> $22.95</p>
+            </li>
+        </ul>
+    </section>
+    <section id="bookslist">
+        <h2 class="section__title">Latest <span class="text--purple">Books</span></h2>
+        <ul class="books">
+            <li class="book__container">
+                <img src="assets/book-1.jpeg" alt="book 1 img" class="book">
+                <h2 class="book__title">The 10x Rule</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$12.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/book-2.jpeg" alt="book 2 img" class="book">
+                <h2 class="book__title">Be Obsessed or be Average</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$14.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/book-3.jpeg" alt="book 3 img" class="book">
+                <h2 class="book__title">Rich Dad Poor Dad</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$25=4.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/book-4.jpeg" alt="book 4 img" class="book">
+                <h2 class="book__title">Cashflow Quadrant</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$29.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/book-5.jpeg" alt="book 5 img" class="book">
+                <h2 class="book__title">Power</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$39.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/book-6.jpeg" alt="book 6 img" class="book">
+                <h2 class="book__title">The 5 Second Rule</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$40.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/book-7.jpg" alt="book 7 img" class="book">
+                <h2 class="book__title">Your Next Five Moves</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$30.95</p>
+            </li>
+            <li class="book__container">
+                <img src="assets/book-8.jpeg" alt="book 8 img" class="book">
+                <h2 class="book__title">Mastery</h2>
+                <ul class="book__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </ul>
+                <p class="book__price">$20.95</p>
+            </li>
+        </ul>
+    </section>
+    <section id="explore">
+        <h2 class="section__title">Explore more <span class="text--purple">Books</span></h2>
+        <button class="bookslink">Browse Books</button>
+    </section>
+    <footer>
+        <img src="assets/Library.svg" alt="footer library logo" class="footer__logo">
+        <div class="footer__links">
+            <a href="#" class="footer__link">Home</a>
+            <a href="" class="footer__link">About</a>
+            <a href="" class="footer__link">Books</a>
+            <a href="" class="footer__link">Contact</a>
+        </div>
+        <p class="copyright">Copyright © 2024 Library</p>
+    </footer>
+</body>
+
+</html>
